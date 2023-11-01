@@ -1,24 +1,35 @@
 <script lang="ts">
-	import Alert from '@fuz.dev/fuz_library/Alert.svelte';
-	import {base} from '$app/paths';
+	import Package_Detail from '@fuz.dev/fuz_library/Package_Detail.svelte';
+	import {parse_package_meta} from '@fuz.dev/fuz_library/package_meta.js';
+	import Library_Footer from '@fuz.dev/fuz_library/Library_Footer.svelte';
+	import Breadcrumb from '@fuz.dev/fuz_library/Breadcrumb.svelte';
 
-	import Mreows from '$routes/Mreows.svelte';
+	import {package_json} from '$lib/package.js';
+	import Favicon from '$routes/Favicon.svelte';
 
-	let mreows: Array<{icon: string}> | undefined;
+	// TODO hacky - maybe put in context?
+	const pkg = parse_package_meta(package_json.homepage, package_json);
 </script>
 
-<main class="prose">
-	<section class="box">
-		<header class="prose">
-			<h1>fuz_template</h1>
-		</header>
-		<Alert>
-			<span slot="icon"
-				>{#if mreows}{mreows[0].icon}{:else}✨{/if}</span
-			><a class="chip" href="{base}/about">about</a>
-		</Alert>
+<main class="width_md">
+	<div class="prose">
+		<section>
+			<header>
+				<h1>{pkg.repo_name}</h1>
+			</header>
+		</section>
+	</div>
+	<section class="box width_full spaced">
+		<div class="panel padded_md width_md">
+			<Package_Detail {pkg} />
+		</div>
 	</section>
-	<Mreows bind:mreows />
+	<section class="box">
+		<Library_Footer {pkg} />
+	</section>
+	<section class="box">
+		<Breadcrumb><Favicon /></Breadcrumb>
+	</section>
 </main>
 
 <style>
@@ -27,5 +38,10 @@
 		flex-direction: column;
 		align-items: center;
 		margin: 0 auto;
+	}
+	h1 {
+		display: flex;
+		align-items: baseline;
+		text-align: center;
 	}
 </style>

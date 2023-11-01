@@ -1,42 +1,64 @@
 {
-  "name": "@fuz.dev/fuz_template",
-  "description": "a static web app and Node library template with TypeScript, Svelte, SvelteKit, Vite, esbuild, Fuz, and Gro",
-  "version": "0.0.1",
+  "name": "@ryanatkn/collisions",
+  "description": "collision detection for circles, polygons, and points — fork of github.com/Sinova/Collisions",
+  "version": "4.0.1",
   "public": true,
-  "homepage": "https://template.fuz.dev/",
-  "repository": "https://github.com/fuz-dev/fuz_template",
+  "license": "MIT",
+  "author": {
+    "name": "Samuel Hodge",
+    "url": "https://github.com/Sinova"
+  },
+  "homepage": "https://collisions.ryanatkn.com/",
   "type": "module",
   "engines": {
     "node": ">=20.7"
   },
-  "scripts": {
-    "start": "gro dev",
-    "dev": "gro dev",
-    "build": "gro build",
-    "test": "gro test",
-    "deploy": "gro deploy"
-  },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
+  "scripts": {
+    "dev": "gro dev",
+    "build": "gro build"
+  },
+  "keywords": [
+    "Collision",
+    "Separating Axis Theorem",
+    "Bounding Volume Hierarchy",
+    "sat",
+    "Bvh",
+    "Circle",
+    "Polygon",
+    "Line",
+    "Shape",
+    "Separating",
+    "Axis",
+    "Theorem",
+    "Bounding",
+    "Volume",
+    "Hierarchy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanatkn/collisions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanatkn/collisions/issues"
+  },
   "devDependencies": {
+    "@changesets/changelog-git": "^0.1.14",
     "@feltjs/eslint-config": "^0.4.1",
     "@fuz.dev/fuz": "^0.79.1",
-    "@fuz.dev/fuz_contextmenu": "^0.6.0",
-    "@fuz.dev/fuz_dialog": "^0.5.0",
     "@fuz.dev/fuz_library": "^0.19.1",
     "@grogarden/gro": "^0.100.1",
-    "@grogarden/util": "^0.16.0",
     "@sveltejs/adapter-static": "^2.0.3",
     "@sveltejs/kit": "^1.27.2",
+    "@sveltejs/package": "^2.2.2",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
     "eslint": "^8.52.0",
     "eslint-plugin-svelte": "^2.34.0",
     "prettier": "^3.0.3",
-    "prettier-plugin-svelte": "^3.0.3",
-    "svelte": "^4.2.2",
-    "svelte-check": "^3.5.2",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
     "uvu": "^0.5.6"
@@ -63,9 +85,37 @@
     ]
   },
   "exports": {
-    "./example.js": {
-      "default": "./dist/example.js",
-      "types": "./dist/example.d.ts"
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./Body.js": {
+      "default": "./dist/Body.js",
+      "types": "./dist/Body.d.ts"
+    },
+    "./Bvh_Branch.js": {
+      "default": "./dist/Bvh_Branch.js",
+      "types": "./dist/Bvh_Branch.d.ts"
+    },
+    "./Bvh.js": {
+      "default": "./dist/Bvh.js",
+      "types": "./dist/Bvh.d.ts"
+    },
+    "./Circle.js": {
+      "default": "./dist/Circle.js",
+      "types": "./dist/Circle.d.ts"
+    },
+    "./Collision_Result.js": {
+      "default": "./dist/Collision_Result.js",
+      "types": "./dist/Collision_Result.d.ts"
+    },
+    "./Collisions.js": {
+      "default": "./dist/Collisions.js",
+      "types": "./dist/Collisions.d.ts"
+    },
+    "./draw.js": {
+      "default": "./dist/draw.js",
+      "types": "./dist/draw.d.ts"
     },
     "./package.gen.js": {
       "default": "./dist/package.gen.js",
@@ -74,6 +124,18 @@
     "./package.js": {
       "default": "./dist/package.js",
       "types": "./dist/package.d.ts"
+    },
+    "./Point.js": {
+      "default": "./dist/Point.js",
+      "types": "./dist/Point.d.ts"
+    },
+    "./Polygon.js": {
+      "default": "./dist/Polygon.js",
+      "types": "./dist/Polygon.d.ts"
+    },
+    "./sat.js": {
+      "default": "./dist/sat.js",
+      "types": "./dist/sat.d.ts"
     }
   }
 }
