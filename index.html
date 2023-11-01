@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/0.c5941760.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.b59c64eb.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.1f070667.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.27461ed5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.36ab76cb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.7b1a0a82.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.18cf58e0.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.8070cefc.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.e5460215.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.a65f1b36.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.0ccd1f8b.js"><title>@ryanatkn/collisions</title><!-- HEAD_svelte-15j2hmy_START --><!-- HEAD_svelte-15j2hmy_END --><!-- HEAD_svelte-1qw2uo0_START --><meta name="color-scheme" content="light dark"> <meta name="theme-color" content="#257e25"> <script><!-- HTML_TAG_START -->
+	try {
+		let c = localStorage.getItem('color-scheme');
+		if (c === 'auto' || (c !== 'dark' && c !== 'light')) {
+			c = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+		}
+		if (c === 'dark') document.documentElement.classList.add('dark');
+	} catch (_) {  }
+<!-- HTML_TAG_END --></script><!-- HEAD_svelte-1qw2uo0_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">     <main class="width_md svelte-m017mk"><div class="prose"><section><header><h1 class="svelte-m017mk">collisions</h1></header></section></div> <section class="box width_full spaced"><div class="panel padded_md width_md"><div class="package_detail svelte-15ke0tz"> <header class="spaced"><div class="repo_name svelte-15ke0tz">collisions</div></header>  <blockquote class="spaced">collision detection for circles, polygons, and points — fork of github.com/Sinova/Collisions</blockquote> <blockquote class="npm_url spaced svelte-15ke0tz">npm i -D @ryanatkn/collisions</blockquote> <section class="properties width_full spaced svelte-15ke0tz"> <div class="row svelte-15ke0tz">homepage:
+					<a class="chip row svelte-15ke0tz" href="https://collisions.ryanatkn.com/"><img src="https://collisions.ryanatkn.com/favicon.png" alt="favicon to homepage at https://collisions.ryanatkn.com/" style="width: 16px; height: 16px; margin-right: var(--spacing_xs);"> collisions.ryanatkn.com</a></div>  <div class="row svelte-15ke0tz">repo: <a class="chip svelte-15ke0tz" title="repo" href="https://github.com/ryanatkn/collisions">collisions</a></div> <div class="row svelte-15ke0tz">npm: <a class="chip svelte-15ke0tz" title="npm" href="https://www.npmjs.com/package/@ryanatkn/collisions">@ryanatkn/collisions</a></div> <div class="row svelte-15ke0tz">version: <a class="chip svelte-15ke0tz" title="version" href="https://github.com/ryanatkn/collisions/blob/main/CHANGELOG.md">4.0.2</a></div> <div class="row svelte-15ke0tz">license: <a class="chip svelte-15ke0tz" title="license" href="git+https://github.com/ryanatkn/collisions.git/blob/main/LICENSE">MIT</a></div> <section class="row spaced svelte-15ke0tz">data:
+				<a class="chip svelte-15ke0tz" title="data" href="https://collisions.ryanatkn.com/.well-known/package.json">package.json</a></section></section> <section class="width_full spaced"><menu>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/index.ts">index.js</a></div> <ul class="declarations svelte-15ke0tz"><li class="declaration chip svelte-15ke0tz   class_declaration">Body </li><li class="declaration chip svelte-15ke0tz  type_declaration">Some_Body </li><li class="declaration chip svelte-15ke0tz   class_declaration">Bvh </li><li class="declaration chip svelte-15ke0tz  type_declaration">Filter_Potentials </li><li class="declaration chip svelte-15ke0tz   class_declaration">Bvh_Branch </li><li class="declaration chip svelte-15ke0tz   class_declaration">Circle </li><li class="declaration chip svelte-15ke0tz   class_declaration">Collisions </li><li class="declaration chip svelte-15ke0tz   class_declaration">Point </li><li class="declaration chip svelte-15ke0tz   class_declaration">Polygon </li><li class="declaration chip svelte-15ke0tz   class_declaration">Collision_Result </li><li class="declaration chip svelte-15ke0tz">sat </li><li class="declaration chip svelte-15ke0tz variable_declaration">aabb_aabb </li><li class="declaration chip svelte-15ke0tz variable_declaration">draw_bodies </li><li class="declaration chip svelte-15ke0tz variable_declaration">draw_circle </li><li class="declaration chip svelte-15ke0tz variable_declaration">draw_polygon </li><li class="declaration chip svelte-15ke0tz variable_declaration">draw_bvh </li> </ul> </li>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/Body.ts">Body.js</a></div> <ul class="declarations svelte-15ke0tz"><li class="declaration chip svelte-15ke0tz  type_declaration">Some_Body </li><li class="declaration chip svelte-15ke0tz   class_declaration">Body </li> </ul> </li>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/Bvh_Branch.ts">Bvh_Branch.js</a></div> <ul class="declarations svelte-15ke0tz"><li class="declaration chip svelte-15ke0tz   class_declaration">Bvh_Branch </li> </ul> </li>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/Bvh.ts">Bvh.js</a></div> <ul class="declarations svelte-15ke0tz"><li class="declaration chip svelte-15ke0tz  type_declaration">Filter_Potentials </li><li class="declaration chip svelte-15ke0tz   class_declaration">Bvh </li> </ul> </li>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/Circle.ts">Circle.js</a></div> <ul class="declarations svelte-15ke0tz"><li class="declaration chip svelte-15ke0tz   class_declaration">Circle </li> </ul> </li>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/Collision_Result.ts">Collision_Result.js</a></div> <ul class="declarations svelte-15ke0tz"><li class="declaration chip svelte-15ke0tz   class_declaration">Collision_Result </li> </ul> </li>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/Collisions.ts">Collisions.js</a></div> <ul class="declarations svelte-15ke0tz"><li class="declaration chip svelte-15ke0tz   class_declaration">Collisions </li> </ul> </li>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/draw.ts">draw.js</a></div> <ul class="declarations svelte-15ke0tz"><li class="declaration chip svelte-15ke0tz variable_declaration">draw_bodies </li><li class="declaration chip svelte-15ke0tz variable_declaration">draw_circle </li><li class="declaration chip svelte-15ke0tz variable_declaration">draw_polygon </li><li class="declaration chip svelte-15ke0tz variable_declaration">draw_bvh </li> </ul> </li>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/package.gen.ts">package.gen.js</a></div> <ul class="declarations svelte-15ke0tz"> </ul> </li>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/package.ts">package.js</a></div> <ul class="declarations svelte-15ke0tz"><li class="declaration chip svelte-15ke0tz variable_declaration">package_json </li> </ul> </li>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/Point.ts">Point.js</a></div> <ul class="declarations svelte-15ke0tz"><li class="declaration chip svelte-15ke0tz   class_declaration">Point </li> </ul> </li>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/Polygon.ts">Polygon.js</a></div> <ul class="declarations svelte-15ke0tz"><li class="declaration chip svelte-15ke0tz   class_declaration">Polygon </li> </ul> </li>   <li class="module svelte-15ke0tz ts"><div><a class="chip svelte-15ke0tz" href="https://github.com/ryanatkn/collisions/blob/main/src/lib/sat.ts">sat.js</a></div> <ul class="declarations svelte-15ke0tz"><li class="declaration chip svelte-15ke0tz">sat </li><li class="declaration chip svelte-15ke0tz variable_declaration">aabb_aabb </li> </ul> </li></menu></section> <section class="width_full spaced"><details><summary data-svelte-h="svelte-k220bw">raw data for <code>pkg: Package_Meta</code></summary> <pre class="svelte-15ke0tz"><code>{
+	"url": "https://collisions.ryanatkn.com/",
+	"package_json": {
+		"name": "@ryanatkn/collisions",
+		"description": "collision detection for circles, polygons, and points — fork of github.com/Sinova/Collisions",
+		"version": "4.0.2",
+		"public": true,
+		"license": "MIT",
+		"author": {
+			"name": "Samuel Hodge",
+			"url": "https://github.com/Sinova"
+		},
+		"homepage": "https://collisions.ryanatkn.com/",
+		"type": "module",
+		"engines": {
+			"node": ">=20.7"
+		},
+		"files": [
+			"dist",
+			"src"
+		],
+		"scripts": {
+			"dev": "gro dev",
+			"build": "gro build"
+		},
+		"keywords": [
+			"Collision",
+			"Separating Axis Theorem",
+			"Bounding Volume Hierarchy",
+			"sat",
+			"Bvh",
+			"Circle",
+			"Polygon",
+			"Line",
+			"Shape",
+			"Separating",
+			"Axis",
+			"Theorem",
+			"Bounding",
+			"Volume",
+			"Hierarchy"
+		],
+		"repository": {
+			"type": "git",
+			"url": "git+https://github.com/ryanatkn/collisions.git"
+		},
+		"bugs": {
+			"url": "https://github.com/ryanatkn/collisions/issues"
+		},
+		"devDependencies": {
+			"@changesets/changelog-git": "^0.1.14",
+			"@feltjs/eslint-config": "^0.4.1",
+			"@fuz.dev/fuz": "^0.79.1",
+			"@fuz.dev/fuz_library": "^0.19.1",
+			"@grogarden/gro": "^0.100.1",
+			"@sveltejs/adapter-static": "^2.0.3",
+			"@sveltejs/kit": "^1.27.2",
+			"@sveltejs/package": "^2.2.2",
+			"@typescript-eslint/eslint-plugin": "^6.9.1",
+			"@typescript-eslint/parser": "^6.9.1",
+			"eslint": "^8.52.0",
+			"eslint-plugin-svelte": "^2.34.0",
+			"prettier": "^3.0.3",
+			"tslib": "^2.6.2",
+			"typescript": "^5.2.2",
+			"uvu": "^0.5.6"
+		},
+		"eslintConfig": {
+			"root": true,
+			"extends": "@feltjs"
+		},
+		"prettier": {
+			"plugins": [
+				"prettier-plugin-svelte"
+			],
+			"useTabs": true,
+			"printWidth": 100,
+			"singleQuote": true,
+			"bracketSpacing": false,
+			"overrides": [
+				{
+					"files": "package.json",
+					"options": {
+						"useTabs": false
+					}
+				}
+			]
+		},
+		"exports": {
+			".": {
+				"default": "./dist/index.js",
+				"types": "./dist/index.d.ts"
+			},
+			"./Body.js": {
+				"default": "./dist/Body.js",
+				"types": "./dist/Body.d.ts"
+			},
+			"./Bvh_Branch.js": {
+				"default": "./dist/Bvh_Branch.js",
+				"types": "./dist/Bvh_Branch.d.ts"
+			},
+			"./Bvh.js": {
+				"default": "./dist/Bvh.js",
+				"types": "./dist/Bvh.d.ts"
+			},
+			"./Circle.js": {
+				"default": "./dist/Circle.js",
+				"types": "./dist/Circle.d.ts"
+			},
+			"./Collision_Result.js": {
+				"default": "./dist/Collision_Result.js",
+				"types": "./dist/Collision_Result.d.ts"
+			},
+			"./Collisions.js": {
+				"default": "./dist/Collisions.js",
+				"types": "./dist/Collisions.d.ts"
+			},
+			"./draw.js": {
+				"default": "./dist/draw.js",
+				"types": "./dist/draw.d.ts"
+			},
+			"./package.gen.js": {
+				"default": "./dist/package.gen.js",
+				"types": "./dist/package.gen.d.ts"
+			},
+			"./package.js": {
+				"default": "./dist/package.js",
+				"types": "./dist/package.d.ts"
+			},
+			"./Point.js": {
+				"default": "./dist/Point.js",
+				"types": "./dist/Point.d.ts"
+			},
+			"./Polygon.js": {
+				"default": "./dist/Polygon.js",
+				"types": "./dist/Polygon.d.ts"
+			},
+			"./sat.js": {
+				"default": "./dist/sat.js",
+				"types": "./dist/sat.d.ts"
+			}
+		},
+		"modules": {
+			".": {
+				"path": "index.ts",
+				"declarations": [
+					{
+						"name": "Body",
+						"kind": "ClassDeclaration"
+					},
+					{
+						"name": "Some_Body",
+						"kind": "TypeAliasDeclaration"
+					},
+					{
+						"name": "Bvh",
+						"kind": "ClassDeclaration"
+					},
+					{
+						"name": "Filter_Potentials",
+						"kind": "InterfaceDeclaration"
+					},
+					{
+						"name": "Bvh_Branch",
+						"kind": "ClassDeclaration"
+					},
+					{
+						"name": "Circle",
+						"kind": "ClassDeclaration"
+					},
+					{
+						"name": "Collisions",
+						"kind": "ClassDeclaration"
+					},
+					{
+						"name": "Point",
+						"kind": "ClassDeclaration"
+					},
+					{
+						"name": "Polygon",
+						"kind": "ClassDeclaration"
+					},
+					{
+						"name": "Collision_Result",
+						"kind": "ClassDeclaration"
+					},
+					{
+						"name": "sat",
+						"kind": "FunctionDeclaration"
+					},
+					{
+						"name": "aabb_aabb",
+						"kind": "VariableDeclaration"
+					},
+					{
+						"name": "draw_bodies",
+						"kind": "VariableDeclaration"
+					},
+					{
+						"name": "draw_circle",
+						"kind": "VariableDeclaration"
+					},
+					{
+						"name": "draw_polygon",
+						"kind": "VariableDeclaration"
+					},
+					{
+						"name": "draw_bvh",
+						"kind": "VariableDeclaration"
+					}
+				]
+			},
+			"./Body.js": {
+				"path": "Body.ts",
+				"declarations": [
+					{
+						"name": "Some_Body",
+						"kind": "TypeAliasDeclaration"
+					},
+					{
+						"name": "Body",
+						"kind": "ClassDeclaration"
+					}
+				]
+			},
+			"./Bvh_Branch.js": {
+				"path": "Bvh_Branch.ts",
+				"declarations": [
+					{
+						"name": "Bvh_Branch",
+						"kind": "ClassDeclaration"
+					}
+				]
+			},
+			"./Bvh.js": {
+				"path": "Bvh.ts",
+				"declarations": [
+					{
+						"name": "Filter_Potentials",
+						"kind": "InterfaceDeclaration"
+					},
+					{
+						"name": "Bvh",
+						"kind": "ClassDeclaration"
+					}
+				]
+			},
+			"./Circle.js": {
+				"path": "Circle.ts",
+				"declarations": [
+					{
+						"name": "Circle",
+						"kind": "ClassDeclaration"
+					}
+				]
+			},
+			"./Collision_Result.js": {
+				"path": "Collision_Result.ts",
+				"declarations": [
+					{
+						"name": "Collision_Result",
+						"kind": "ClassDeclaration"
+					}
+				]
+			},
+			"./Collisions.js": {
+				"path": "Collisions.ts",
+				"declarations": [
+					{
+						"name": "Collisions",
+						"kind": "ClassDeclaration"
+					}
+				]
+			},
+			"./draw.js": {
+				"path": "draw.ts",
+				"declarations": [
+					{
+						"name": "draw_bodies",
+						"kind": "VariableDeclaration"
+					},
+					{
+						"name": "draw_circle",
+						"kind": "VariableDeclaration"
+					},
+					{
+						"name": "draw_polygon",
+						"kind": "VariableDeclaration"
+					},
+					{
+						"name": "draw_bvh",
+						"kind": "VariableDeclaration"
+					}
+				]
+			},
+			"./package.gen.js": {
+				"path": "package.gen.ts",
+				"declarations": []
+			},
+			"./package.js": {
+				"path": "package.ts",
+				"declarations": [
+					{
+						"name": "package_json",
+						"kind": "VariableDeclaration"
+					}
+				]
+			},
+			"./Point.js": {
+				"path": "Point.ts",
+				"declarations": [
+					{
+						"name": "Point",
+						"kind": "ClassDeclaration"
+					}
+				]
+			},
+			"./Polygon.js": {
+				"path": "Polygon.ts",
+				"declarations": [
+					{
+						"name": "Polygon",
+						"kind": "ClassDeclaration"
+					}
+				]
+			},
+			"./sat.js": {
+				"path": "sat.ts",
+				"declarations": [
+					{
+						"name": "sat",
+						"kind": "FunctionDeclaration"
+					},
+					{
+						"name": "aabb_aabb",
+						"kind": "VariableDeclaration"
+					}
+				]
+			}
+		}
+	},
+	"name": "@ryanatkn/collisions",
+	"repo_name": "collisions",
+	"repo_url": "https://github.com/ryanatkn/collisions",
+	"owner_name": "ryanatkn",
+	"homepage_url": "https://collisions.ryanatkn.com/",
+	"npm_url": "https://www.npmjs.com/package/@ryanatkn/collisions",
+	"changelog_url": "https://github.com/ryanatkn/collisions/blob/main/CHANGELOG.md",
+	"published": true
+}</code></pre></details></section>  </div> </div></section> <section class="box"><footer class="panel padded_lg svelte-1o3q16b"> <div class="logo svelte-1o3q16b"><a href="https://github.com/ryanatkn/collisions" rel="me" class="svelte-1o3q16b"><svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub icon" viewBox="0 0 1024 1024" fill="none" style="width: var(--spacing_7, 64px); height: var(--spacing_7, 64px);"><path fill="var(--color, #000)" fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02
+		15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32
+		12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12
+		11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33
+		11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74
+		5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95
+		7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31
+		12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12
+		7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01
+		13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71
+		14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)"></path></svg></a></div>  </footer></section> <section class="box"><div class="breadcrumb svelte-g6c005"> <a href="/" class="svelte-g6c005 selected"><img src="/favicon.png" width="16" height="16" alt="the spiderspace icon, a 16 by 16 yellow pixelated spider"></a> </div></section> </main> 
+			
+			<script>
+				{
+					__sveltekit_6t3yk1 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.1f070667.js"),
+						import("./_app/immutable/entry/app.18cf58e0.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
