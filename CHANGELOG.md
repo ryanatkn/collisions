@@ -1,5 +1,11 @@
 # @ryanatkn/collisions
 
+## 4.0.2
+
+### Patch Changes
+
+- 2470d68: update link
+
 ## 4.0.1
 
 ### Patch Changes
@@ -11,7 +17,6 @@
 ### Major Changes
 
 - c7af6ed: rename to `Proper_Snakes`
-
 
 ## 3.0.1
 

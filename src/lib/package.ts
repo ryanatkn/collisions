@@ -6,7 +6,7 @@ export const package_json = {
 	name: '@ryanatkn/collisions',
 	description:
 		'collision detection for circles, polygons, and points — fork of github.com/Sinova/Collisions',
-	version: '4.0.1',
+	version: '4.0.2',
 	public: true,
 	license: 'MIT',
 	author: {name: 'Samuel Hodge', url: 'https://github.com/Sinova'},
