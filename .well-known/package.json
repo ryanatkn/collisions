@@ -48,16 +48,16 @@
   "devDependencies": {
     "@changesets/changelog-git": "^0.1.14",
     "@feltjs/eslint-config": "^0.4.1",
-    "@fuz.dev/fuz": "^0.79.1",
-    "@fuz.dev/fuz_library": "^0.19.1",
-    "@grogarden/gro": "^0.100.1",
+    "@fuz.dev/fuz": "^0.79.3",
+    "@fuz.dev/fuz_library": "^0.20.0",
+    "@grogarden/gro": "^0.101.0",
     "@sveltejs/adapter-static": "^2.0.3",
-    "@sveltejs/kit": "^1.27.2",
+    "@sveltejs/kit": "^1.27.3",
     "@sveltejs/package": "^2.2.2",
-    "@typescript-eslint/eslint-plugin": "^6.9.1",
-    "@typescript-eslint/parser": "^6.9.1",
-    "eslint": "^8.52.0",
-    "eslint-plugin-svelte": "^2.34.0",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-svelte": "^2.35.0",
     "prettier": "^3.0.3",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
@@ -144,67 +144,67 @@
       "declarations": [
         {
           "name": "Body",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         },
         {
           "name": "Some_Body",
-          "kind": "TypeAliasDeclaration"
+          "kind": "type"
         },
         {
           "name": "Bvh",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         },
         {
           "name": "Filter_Potentials",
-          "kind": "InterfaceDeclaration"
+          "kind": "type"
         },
         {
           "name": "Bvh_Branch",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         },
         {
           "name": "Circle",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         },
         {
           "name": "Collisions",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         },
         {
           "name": "Point",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         },
         {
           "name": "Polygon",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         },
         {
           "name": "Collision_Result",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         },
         {
           "name": "sat",
-          "kind": "FunctionDeclaration"
+          "kind": null
         },
         {
           "name": "aabb_aabb",
-          "kind": "VariableDeclaration"
+          "kind": "function"
         },
         {
           "name": "draw_bodies",
-          "kind": "VariableDeclaration"
+          "kind": "function"
         },
         {
           "name": "draw_circle",
-          "kind": "VariableDeclaration"
+          "kind": "function"
         },
         {
           "name": "draw_polygon",
-          "kind": "VariableDeclaration"
+          "kind": "function"
         },
         {
           "name": "draw_bvh",
-          "kind": "VariableDeclaration"
+          "kind": "function"
         }
       ]
     },
@@ -213,11 +213,11 @@
       "declarations": [
         {
           "name": "Some_Body",
-          "kind": "TypeAliasDeclaration"
+          "kind": "type"
         },
         {
           "name": "Body",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         }
       ]
     },
@@ -226,7 +226,7 @@
       "declarations": [
         {
           "name": "Bvh_Branch",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         }
       ]
     },
@@ -235,11 +235,11 @@
       "declarations": [
         {
           "name": "Filter_Potentials",
-          "kind": "InterfaceDeclaration"
+          "kind": "type"
         },
         {
           "name": "Bvh",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         }
       ]
     },
@@ -248,7 +248,7 @@
       "declarations": [
         {
           "name": "Circle",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         }
       ]
     },
@@ -257,7 +257,7 @@
       "declarations": [
         {
           "name": "Collision_Result",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         }
       ]
     },
@@ -266,7 +266,7 @@
       "declarations": [
         {
           "name": "Collisions",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         }
       ]
     },
@@ -275,19 +275,19 @@
       "declarations": [
         {
           "name": "draw_bodies",
-          "kind": "VariableDeclaration"
+          "kind": "function"
         },
         {
           "name": "draw_circle",
-          "kind": "VariableDeclaration"
+          "kind": "function"
         },
         {
           "name": "draw_polygon",
-          "kind": "VariableDeclaration"
+          "kind": "function"
         },
         {
           "name": "draw_bvh",
-          "kind": "VariableDeclaration"
+          "kind": "function"
         }
       ]
     },
@@ -300,7 +300,7 @@
       "declarations": [
         {
           "name": "package_json",
-          "kind": "VariableDeclaration"
+          "kind": "variable"
         }
       ]
     },
@@ -309,7 +309,7 @@
       "declarations": [
         {
           "name": "Point",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         }
       ]
     },
@@ -318,7 +318,7 @@
       "declarations": [
         {
           "name": "Polygon",
-          "kind": "ClassDeclaration"
+          "kind": "class"
         }
       ]
     },
@@ -327,11 +327,11 @@
       "declarations": [
         {
           "name": "sat",
-          "kind": "FunctionDeclaration"
+          "kind": null
         },
         {
           "name": "aabb_aabb",
-          "kind": "VariableDeclaration"
+          "kind": "function"
         }
       ]
     }
