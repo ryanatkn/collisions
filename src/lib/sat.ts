@@ -70,10 +70,10 @@ export function sat(
 			a_polygon && b_polygon
 				? polygon_polygon(a, b, result)
 				: a_polygon
-				? polygon_circle(a, b as any, result, false)
-				: b_polygon
-				? polygon_circle(b, a, result, true)
-				: circle_circle(a, b, result);
+				  ? polygon_circle(a, b as any, result, false)
+				  : b_polygon
+				    ? polygon_circle(b, a, result, true)
+				    : circle_circle(a, b, result);
 	}
 
 	if (result) {
