@@ -12,7 +12,7 @@
   "homepage": "https://collisions.ryanatkn.com/",
   "type": "module",
   "engines": {
-    "node": ">=20.7"
+    "node": ">=20.10"
   },
   "files": [
     "dist",
@@ -51,17 +51,19 @@
     "@feltjs/eslint-config": "^0.4.1",
     "@fuz.dev/fuz": "^0.81.0",
     "@fuz.dev/fuz_library": "^0.23.0",
-    "@grogarden/gro": "^0.103.0",
-    "@sveltejs/adapter-static": "^2.0.3",
-    "@sveltejs/kit": "^1.27.6",
-    "@sveltejs/package": "^2.2.3",
-    "@typescript-eslint/eslint-plugin": "^6.13.1",
-    "@typescript-eslint/parser": "^6.13.1",
-    "eslint": "^8.54.0",
+    "@grogarden/gro": "^0.107.1",
+    "@sveltejs/adapter-static": "^3.0.1",
+    "@sveltejs/kit": "^2.0.4",
+    "@sveltejs/package": "^2.2.4",
+    "@sveltejs/vite-plugin-svelte": "^3.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-svelte": "^2.35.1",
-    "prettier": "^3.1.0",
+    "prettier": "^3.1.1",
+    "svelte": "^4.2.8",
     "tslib": "^2.6.2",
-    "typescript": "^5.3.2",
+    "typescript": "^5.3.3",
     "uvu": "^0.5.6"
   },
   "eslintConfig": {
@@ -117,14 +119,6 @@
     "./draw.js": {
       "default": "./dist/draw.js",
       "types": "./dist/draw.d.ts"
-    },
-    "./package.gen.js": {
-      "default": "./dist/package.gen.js",
-      "types": "./dist/package.gen.d.ts"
-    },
-    "./package.js": {
-      "default": "./dist/package.js",
-      "types": "./dist/package.d.ts"
     },
     "./Point.js": {
       "default": "./dist/Point.js",
